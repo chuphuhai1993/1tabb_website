@@ -20,7 +20,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             onClick={() => onNavigate('Home')}
             className="cursor-pointer flex items-center space-x-2 w-20"
           >
-            <img src="../../assets/logo/logo2_black.svg" alt="1Tabb" className="h-8 w-auto hover:text-red-500" />
+            <img src="/1tabb_website/assets/logo/logo2_black.svg" alt="1Tabb" className="h-8 w-auto hover:text-red-500" />
           </button>
 
           {/* Desktop Navigation */}

@@ -45,7 +45,7 @@ export function ContactPage() {
       {/* Hero Section */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-          <img className="w-48 mb-6" src='../../assets/shakehand_woodcut.png' alt="Contacts" />
+          <img className="w-48 mb-6" src='/1tabb_website/assets/shakehand_woodcut.png' alt="Contacts" />
           <h1 className="mb-4">Partner With Us</h1>
           <p className="text-[#444444] max-w-3xl mx-auto text-sm">
             Join forces with us to amplify your app&apos;s success. Leverage our expertise in user acquisition, monetization, and data analytics to maximize your app&apos;s potential.

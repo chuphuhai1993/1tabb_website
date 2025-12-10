@@ -16,13 +16,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
       name: 'LED Scroller',
       description: 'Dynamic live wallpapers that bring your screen to life.',
       rating: 5.0,
-      icon: '../../assets/products/led.png'
+      icon: '/1tabb_website/assets/products/led.png'
     },
     {
       name: 'Neon Banner',
       description: 'Save online videos in HD to watch offline anytime.',
       rating: 5.0,
-      icon: '../../assets/products/neon.png'
+      icon: '/1tabb_website/assets/products/neon.png'
     },
     {
       name: 'Voice Changer',
@@ -82,7 +82,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </div>
           <div className="relative">
             <ImageWithFallback
-              src="../../assets/hanoi_woodcut.png"
+              src="/1tabb_website/assets/hanoi_woodcut.png"
               alt="Modern office team"
               className="w-full h-full object-cover"
             />
@@ -214,14 +214,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
                   <div className="flex gap-2 w-full mt-auto">
                     <button className="cursor-pointer flex flex-1 items-center border border-black bg-white hover:bg-[#F5F5F5] text-black/80 px-3 py-3 text-xs font-medium transition-colors text-left">
-                      <img src="../../assets/images/appstore.svg" alt="App Store" className="w-6 h-6" />
+                      <img src="/1tabb_website/assets/images/appstore.svg" alt="App Store" className="w-6 h-6" />
                       <div className='ml-2'>
                         <p className='my-[-4px] text-[10px]'>Download on the</p>
                         <p className='my-[-4px] font-semibold text-[12px]'>App Store</p>
                       </div>
                     </button>
                     <button className="cursor-pointer flex flex-1 items-center border border-black bg-white hover:bg-[#F5F5F5] text-black/80 px-3 py-3 text-xs font-medium transition-colors text-left">
-                      <img src="../../assets/images/gp.svg" alt="Google Play" className="w-6 h-6" />
+                      <img src="/1tabb_website/assets/images/gp.svg" alt="Google Play" className="w-6 h-6" />
                       <div className='ml-2'>
                         <p className='my-[-4px] text-[10px]'>Get it on</p>
                         <p className='my-[-4px] font-semibold text-[12px]'>Google Play</p>
@@ -242,47 +242,47 @@ export function HomePage({ onNavigate }: HomePageProps) {
             {[
               {
                 name: 'Meta',
-                logo: '../../assets/clients/logo_meta.png'
+                logo: '/1tabb_website/assets/clients/logo_meta.png'
               },
               {
                 name: 'Admob',
-                logo: '../../assets/clients/logo_admob.png'
+                logo: '/1tabb_website/assets/clients/logo_admob.png'
               },
               {
                 name: 'Google Ads',
-                logo: '../../assets/clients/logo_ads.png'
+                logo: '/1tabb_website/assets/clients/logo_ads.png'
               },
               {
                 name: 'AppLovin',
-                logo: '../../assets/clients/logo_applovin.png'
+                logo: '/1tabb_website/assets/clients/logo_applovin.png'
               },
               {
                 name: 'App Store',
-                logo: '../../assets/clients/logo_appstore.png'
+                logo: '/1tabb_website/assets/clients/logo_appstore.png'
               },
               {
                 name: 'Google Play',
-                logo: '../../assets/clients/logo_gp.png'
+                logo: '/1tabb_website/assets/clients/logo_gp.png'
               },
               {
                 name: 'IronSource',
-                logo: '../../assets/clients/logo_ironsource.png'
+                logo: '/1tabb_website/assets/clients/logo_ironsource.png'
               },
               {
                 name: 'Meta',
-                logo: '../../assets/clients/logo_meta.png'
+                logo: '/1tabb_website/assets/clients/logo_meta.png'
               },
               {
                 name: 'Mintegral',
-                logo: '../../assets/clients/logo_mintegral.png'
+                logo: '/1tabb_website/assets/clients/logo_mintegral.png'
               },
               {
                 name: 'Search Ads',
-                logo: '../../assets/clients/logo_searchads.png'
+                logo: '/1tabb_website/assets/clients/logo_searchads.png'
               },
               {
                 name: 'Unity',
-                logo: '../../assets/clients/logo_unity.png'
+                logo: '/1tabb_website/assets/clients/logo_unity.png'
               }
             ].map((client, index) => (
               <div
