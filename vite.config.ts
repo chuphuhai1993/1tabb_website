@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/postcss';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/1tabb_website/',
   css: {
     postcss: {
       plugins: [tailwindcss()],
