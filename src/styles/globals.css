@@ -51,3 +51,8 @@ h4 {
 p {
   line-height: 1.6;
 }
+
+.decorative-text {
+  font-family: 'Noto Serif Display', serif;
+  font-style: italic;
+}

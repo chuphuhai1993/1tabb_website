@@ -133,6 +133,11 @@
     font-family: 'IBM Plex Mono', monospace;
   }
 
+  .decorative-text {
+    font-family: 'Noto Serif Display', serif;
+    font-style: italic;
+  }
+
   p {
     line-height: 1.6;
   }

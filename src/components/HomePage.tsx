@@ -62,7 +62,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         <div className="max-w-7xl px-4 sm:px-6 lg:px-8  py-20 mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="mb-4 text-4xl font-bold tracking-tight">
-              Where Innovation Meets Evolution.
+              Where <span className="decorative-text">Innovation</span> Meets <span className="decorative-text">Evolution</span>.
             </h1>
             <p className="text-[#444444] mb-6">
               Revolutionizing the applied AI technology in work, education, and entertainment to boost productivity and daily life experiences for billions of users worldwide.
