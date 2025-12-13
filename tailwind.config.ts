@@ -11,9 +11,6 @@ const config: Config = {
       fontFamily: {
         sans: ['Geist', 'sans-serif'],
       },
-      colors: {
-        'brand-orange': '#D5ED5D',
-      },
     },
   },
   plugins: [],

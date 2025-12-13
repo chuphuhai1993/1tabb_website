@@ -12,7 +12,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
   const navItems = ['Home', 'Product', 'Blog', 'Career', 'Contact'];
 
   return (
-    <header className="bg-[#FFFFFF]/90 backdrop-blur-lg border-b border-black/10 sticky top-0 z-50">
+    <header className="bg-background-color/90 backdrop-blur-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14">
           {/* Logo */}
@@ -29,9 +29,9 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
               <button
                 key={item}
                 onClick={() => onNavigate(item)}
-                className={`cursor-pointer transition-colors text-sm ${currentPage === item
-                  ? 'text-black'
-                  : 'text-[#666666] hover:text-black'
+                className={`cursor-pointer transition-all duration-200 text-sm ${currentPage === item
+                  ? 'text-text-color'
+                  : 'text-text-secondary-color/80 hover:text-text-color'
                   }`}
               >
                 {item}
@@ -59,8 +59,8 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
                   setMobileMenuOpen(false);
                 }}
                 className={`block w-full text-left py-2 ${currentPage === item
-                  ? 'text-black'
-                  : 'text-[#666666]'
+                  ? 'text-text-color'
+                  : 'text-text-secondary-color hover:text-text-color'
                   }`}
               >
                 {item}

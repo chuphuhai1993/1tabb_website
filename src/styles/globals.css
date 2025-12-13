@@ -2,19 +2,20 @@
 
 @theme {
   --font-family: "Geist", sans-serif;
-  --color-brand-orange: #D5ED5D;
+  --color-brand-color: #D5ED5D;
+  --color-background-color: #FFFCF9;
+  --color-surface-color: #F1EDE3;
+  --color-text-color: #18161D;
+  --color-text-secondary-color: #444444;
 }
 
 :root {
-  --color-primary: #000000;
-  --color-background: #F2F2F0;
-  --color-text: #000000;
-  --color-text-secondary: #666666;
+  --color-primary: #18161D;
 }
 
 body {
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background-color: var(--color-background-color);
+  color: var(--color-text-color);
   margin: 0;
   padding: 0;
   font-family: var(--font-family);

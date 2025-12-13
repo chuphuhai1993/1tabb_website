@@ -48,48 +48,48 @@ export function ProductPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-white text-black py-12">
+      <section className="bg-background-color text-black py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-          <img className="w-40 mb-8" src='/1tabb_website/assets/appstore_woodcut.png' alt="Product" />
+          <img className="w-40 mb-8 mix-blend-multiply" src='/1tabb_website/assets/appstore_woodcut.png' alt="Product" />
           <h1 className="text-black mb-4">Our Products</h1>
-          <p className="text-[#444444] max-w-2xl mx-auto">
+          <p className="text-text-secondary-color max-w-2xl mx-auto">
             Discover our comprehensive suite of AI-powered mobile applications designed to transform how you work, learn, and play.
           </p>
         </div>
       </section>
 
       {/* Product Excellence Section */}
-      <section className="text-black mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="bg-surface-color text-text-color mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
           {/* Design Excellence */}
           <div className="text-center">
-            <div className="w-12 h-12 bg-black mb-3 flex items-center justify-center rounded-full mx-auto">
+            <div className="w-12 h-12 bg-text-color mb-3 flex items-center justify-center rounded-full mx-auto">
               <Sparkles className="text-white" size={22} />
             </div>
             <h3 className="mb-3">Design Excellence</h3>
-            <p className="text-[#444444] text-sm">
+            <p className="text-text-secondary-color text-sm">
               Unique design and superior user experience that sets our applications apart in the marketplace.
             </p>
           </div>
 
           {/* AI Technology */}
           <div className="text-center">
-            <div className="w-12 h-12 bg-black mb-3 flex items-center justify-center rounded-full mx-auto">
+            <div className="w-12 h-12 bg-text-color mb-3 flex items-center justify-center rounded-full mx-auto">
               <Sparkles className="text-white" size={22} />
             </div>
             <h3 className="mb-3">AI Technology</h3>
-            <p className="text-[#444444] text-sm">
+            <p className="text-text-secondary-color text-sm">
               Advanced AI integration that powers intelligent features and enhances user productivity.
             </p>
           </div>
 
           {/* Personalization */}
           <div className="text-center">
-            <div className="w-12 h-12 bg-black mb-3 flex items-center justify-center rounded-full mx-auto">
+            <div className="w-12 h-12 bg-text-color mb-3 flex items-center justify-center rounded-full mx-auto">
               <Sparkles className="text-white" size={22} />
             </div>
             <h3 className="mb-3">Personalization</h3>
-            <p className="text-[#444444] text-sm">
+            <p className="text-text-secondary-color text-sm">
               Tailored user experiences powered by big data analytics and machine learning algorithms.
             </p>
           </div>
@@ -97,11 +97,11 @@ export function ProductPage() {
       </section>
 
       {/* Products Grid */}
-      <section className="bg-white py-20">
+      <section className="bg-background-color py-20">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 text-center">
             <h2 className="mb-4 text-4xl font-bold tracking-tight">Discover More</h2>
-            <p className="text-[#444444] text-md max-w-2xl mx-auto">
+            <p className="text-text-secondary-color text-md max-w-2xl mx-auto">
               Explore our full range of innovative solutions designed for digital life.
             </p>
           </div>
@@ -115,7 +115,7 @@ export function ProductPage() {
               {products.map((product, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-[320px] bg-white border border-[#E5E5E5] p-4 flex flex-col items-start text-left snap-start group cursor-pointer"
+                  className="flex-shrink-0 w-[320px] bg-white border border-text-color/10 p-4 flex flex-col items-start text-left snap-start group cursor-pointer grayscale-100 hover:grayscale-0 transition-all duration-200"
                 >
                   <div className="w-24 h-24 mb-6 rounded-2xl overflow-hidden bg-gray-100">
                     <ImageWithFallback
@@ -126,19 +126,19 @@ export function ProductPage() {
                   </div>
 
                   <h3 className="mb-3 text-xl font-bold">{product.name}</h3>
-                  <p className="text-[#666666] text-sm mb-6 leading-relaxed min-h-[40px]">
+                  <p className="text-text-secondary-color text-sm mb-6 leading-relaxed min-h-[40px]">
                     {product.description}
                   </p>
 
                   <div className="flex gap-2 w-full mt-auto">
-                    <button className="cursor-pointer flex flex-1 items-center border border-black bg-white hover:bg-[#F5F5F5] text-black/80 px-3 py-3 text-xs font-medium transition-colors text-left">
+                    <button className="cursor-pointer flex flex-1 items-center border border-text-color/10 hover:bg-text-color/10 text-text-color px-3 py-3 text-xs font-medium transition-all duration-200 text-left">
                       <img src="/1tabb_website/assets/images/appstore.svg" alt="App Store" className="w-6 h-6" />
                       <div className='ml-2'>
                         <p className='my-[-4px] text-[10px]'>Download on the</p>
                         <p className='my-[-4px] font-semibold text-[12px]'>App Store</p>
                       </div>
                     </button>
-                    <button className="cursor-pointer flex flex-1 items-center border border-black bg-white hover:bg-[#F5F5F5] text-black/80 px-3 py-3 text-xs font-medium transition-colors text-left">
+                    <button className="cursor-pointer flex flex-1 items-center border border-text-color/10 hover:bg-text-color/10 text-text-color px-3 py-3 text-xs font-medium transition-all duration-200 text-left">
                       <img src="/1tabb_website/assets/images/gp.svg" alt="Google Play" className="w-6 h-6" />
                       <div className='ml-2'>
                         <p className='my-[-4px] text-[10px]'>Get it on</p>
@@ -153,14 +153,14 @@ export function ProductPage() {
             <div className="flex justify-center gap-4 mt-8">
               <button
                 onClick={() => scrollProducts('left')}
-                className="cursor-pointer w-10 h-10 rounded-full bg-white shadow-lg border border-black/10 flex items-center justify-center text-black hover:bg-black hover:text-white transition-all duration-300 disabled:opacity-50"
+                className="cursor-pointer w-10 h-10 rounded-full bg-white shadow-lg border border-text-color/10 flex items-center justify-center text-black hover:bg-text-color hover:text-white transition-all duration-200 disabled:opacity-50"
                 aria-label="Scroll left"
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={() => scrollProducts('right')}
-                className="cursor-pointer w-10 h-10 rounded-full bg-white shadow-lg border border-black/10 flex items-center justify-center text-black hover:bg-black hover:text-white transition-all duration-300"
+                className="cursor-pointer w-10 h-10 rounded-full bg-white shadow-lg border border-text-color/10 flex items-center justify-center text-black hover:bg-text-color hover:text-white transition-all duration-200"
                 aria-label="Scroll right"
               >
                 <ChevronRight size={20} />
@@ -171,13 +171,13 @@ export function ProductPage() {
       </section>
 
       {/* Product Categories Section */}
-      <section className="bg-white py-12">
+      <section className="bg-background-color py-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-6">
             {/* Work Solutions */}
-            <div className="bg-[#F2F2F0] p-6">
+            <div className="bg-surface-color p-6">
               <h3 className="mb-3">Work Solutions</h3>
-              <p className="text-[#666666] text-sm mb-4">
+              <p className="text-text-secondary-color text-sm mb-4">
                 Professional tools that enhance productivity and streamline workflows
               </p>
               <ul className="space-y-2">
@@ -201,9 +201,9 @@ export function ProductPage() {
             </div>
 
             {/* Study Tools */}
-            <div className="bg-[#F2F2F0] p-6">
+            <div className="bg-surface-color p-6">
               <h3 className="mb-3">Study Tools</h3>
-              <p className="text-[#666666] text-sm mb-4">
+              <p className="text-text-secondary-color text-sm mb-4">
                 Educational applications that make learning more engaging and effective
               </p>
               <ul className="space-y-2">
@@ -227,9 +227,9 @@ export function ProductPage() {
             </div>
 
             {/* Entertainment */}
-            <div className="bg-[#F2F2F0] p-6">
+            <div className="bg-surface-color p-6">
               <h3 className="mb-3">Entertainment</h3>
-              <p className="text-[#666666] text-sm mb-4">
+              <p className="text-text-secondary-color text-sm mb-4">
                 Creative and fun applications for leisure and artistic expression
               </p>
               <ul className="space-y-2">
@@ -256,21 +256,21 @@ export function ProductPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="bg-surface-color py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-black mb-4">Ready to Join Our Journey?</h2>
-          <p className="text-[#444444] mb-6 max-w-2xl mx-auto">
+          <h2 className="text-text-color mb-4">Ready to Join Our Journey?</h2>
+          <p className="text-text-secondary-color mb-6 max-w-2xl mx-auto">
             Whether you're looking to work with us or partner with us, let's create the future of AI-powered mobile applications together.
           </p>
           <button
             onClick={() => onNavigate('Career')}
-            className="cursor-pointer bg-black text-white px-6 py-3 inline-flex items-center space-x-2 hover:bg-brand-orange  hover:text-black transition-colors text-sm mr-3"
+            className="cursor-pointer bg-text-color text-white px-6 py-3 inline-flex items-center space-x-2 hover:bg-brand-color  hover:text-text-color hover:shadow-[inset_0_0_0_1px_var(--color-text-color)] transition-all duration-200 text-sm mr-3"
           >
             <span>Join Our Team</span>
           </button>
           <button
             onClick={() => onNavigate('Contact')}
-            className="cursor-pointer bg-transparent shadow-[inset_0_0_0_1px_#000000] hover:shadow-[inset_0_0_0_1px_transparent] px-6 py-3 inline-flex items-center space-x-2 hover:bg-brand-orange transition-colors text-sm"
+            className="cursor-pointer bg-transparent shadow-[inset_0_0_0_1px_var(--color-text-color)] px-6 py-3 inline-flex items-center space-x-2 hover:bg-brand-color transition-all duration-200 text-sm"
           >
             <span>Become a Partner</span>
           </button>

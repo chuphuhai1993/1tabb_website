@@ -56,17 +56,17 @@ export function BlogPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-[#F2F2F0] text-black py-20">
+      <section className="bg-surface-color text-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-black mb-4">Blog &amp; Insights</h1>
-          <p className="text-[#444444] max-w-2xl mx-auto">
+          <h1 className="mb-4">Blog &amp; Insights</h1>
+          <p className="text-text-secondary-color max-w-2xl mx-auto">
             Stay updated with the latest news, insights, and developments from Tevo. Discover industry trends, product updates, and behind-the-scenes stories.
           </p>
         </div>
       </section>
 
       {/* Blog Grid */}
-      <section className="bg-white">
+      <section className="bg-background-color">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
           {blogPosts.map((post, index) => (
             <article key={index} className="group cursor-pointer">
@@ -74,19 +74,19 @@ export function BlogPage() {
                 <ImageWithFallback
                   src={post.image}
                   alt={post.title}
-                  className="grayscale hover:grayscale-0 transition-all duration-300 opacity-90 hover:opacity-100 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="grayscale hover:grayscale-0 transition-all duration-200 opacity-80 hover:opacity-100 w-full h-full object-cover group-hover:scale-105"
                 />
               </div>
               <div className="mb-2">
-                <span className="text-xs text-[#444444]">{post.category}</span>
+                <span className="text-xs text-text-secondary-color">{post.category}</span>
               </div>
-              <h3 className="mb-2 group-hover:text-[#444444] transition-colors">
+              <h3 className="mb-2 group-hover:text-text-primary-color transition-colors">
                 {post.title}
               </h3>
-              <p className="text-[#444444] mb-3 text-sm">
+              <p className="text-text-secondary-color mb-3 text-sm">
                 {post.excerpt}
               </p>
-              <div className="flex items-center space-x-3 text-xs text-[#444444]">
+              <div className="flex items-center space-x-3 text-xs text-text-secondary-color">
                 <div className="flex items-center space-x-1">
                   <Calendar size={14} />
                   <span>{post.date}</span>
@@ -102,19 +102,19 @@ export function BlogPage() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="bg-[#F2F2F0] py-20">
+      <section className="bg-surface-color py-20">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="mb-3">Stay Updated</h2>
-          <p className="text-[#666666] mb-6 text-sm">
+          <p className="text-text-secondary-color mb-6 text-sm">
             Subscribe to our newsletter and never miss an update about our latest products, features, and industry insights.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <input
               type="email"
               placeholder="Email của bạn"
-              className="flex-1 px-5 py-3 border border-black/10 focus:outline-none focus:border-black text-sm"
+              className="cursor-pointer flex-1 px-5 py-3 border border-text-secondary-color/10 focus:outline-none focus:border-text-secondary-color text-sm"
             />
-            <button className="bg-black text-white px-6 py-3 hover:bg-black/90 transition-colors whitespace-nowrap text-sm">
+            <button className="cursor-pointer bg-text-color text-white px-6 py-3 hover:bg-brand-color hover:text-text-color hover:shadow-[inset_0_0_0_1px_var(--color-text-color)] transition-all duration-200 whitespace-nowrap text-sm">
               Đăng ký
             </button>
           </div>

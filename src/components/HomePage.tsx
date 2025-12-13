@@ -58,24 +58,24 @@ export function HomePage({ onNavigate }: HomePageProps) {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-white">
+      <section className="bg-background-color">
         <div className="max-w-7xl px-4 sm:px-6 lg:px-8  py-20 mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="mb-4 text-4xl font-bold tracking-tight">
               Where <span className="decorative-text">Innovation</span> Meets <span className="decorative-text">Evolution</span>.
             </h1>
-            <p className="text-[#444444] mb-6">
+            <p className="text-text-secondary-color mb-6">
               Revolutionizing the applied AI technology in work, education, and entertainment to boost productivity and daily life experiences for billions of users worldwide.
             </p>
             <button
               onClick={() => onNavigate('Product')}
-              className="cursor-pointer bg-black text-white px-6 py-3 inline-flex items-center space-x-2 hover:bg-brand-orange  hover:text-black transition-colors text-sm mr-3"
+              className="cursor-pointer bg-text-color text-white px-6 py-3 inline-flex items-center space-x-2 hover:bg-brand-color hover:text-text-color shadow-[inset_0_0_0_1px_var(--color-text-color)] transition-all duration-200 text-sm mr-3"
             >
               <span>Our Products</span>
             </button>
             <button
               onClick={() => onNavigate('Contact')}
-              className="cursor-pointer bg-transparent shadow-[inset_0_0_0_1px_#000000] hover:shadow-[inset_0_0_0_1px_transparent] px-6 py-3 inline-flex items-center space-x-2 hover:bg-brand-orange transition-colors text-sm"
+              className="cursor-pointer bg-transparent shadow-[inset_0_0_0_1px_var(--color-text-color)] px-6 py-3 inline-flex items-center space-x-2 hover:bg-brand-color hover:text-text-color text-sm transition-all duration-200"
             >
               <span>Contact Us</span>
             </button>
@@ -84,18 +84,18 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <ImageWithFallback
               src="/1tabb_website/assets/hanoi_woodcut.png"
               alt="Modern office team"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover mix-blend-multiply"
             />
           </div>
         </div>
       </section>
 
       {/* Our Vision Section */}
-      <section className="bg-[#F2F2F0] py-20">
+      <section className="bg-surface-color py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-[200px_1fr] gap-8 items-start">
             <h3>Our Vision</h3>
-            <p className="text-[#444444] text-md">
+            <p className="text-text-secondary-color text-md">
               The leading company in AI apps &amp; services and among the top 5 largest companies in the mobile apps &amp; games industry from Southeast Asia.
             </p>
           </div>
@@ -103,7 +103,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Features Section */}
-      <section className="bg-white py-20">
+      <section className="bg-background-color py-20">
         <div className="max-w-7xl mx-auto px-6 sm:px-4 lg:px-8">
           <div className="grid md:grid-cols-4 gap-4">
             {[
@@ -124,12 +124,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 description: 'Make a difference. Your work has a real impact on people and the world around you.'
               }
             ].map((feature, index) => (
-              <div key={index} className="p-4 border border-black/10 bg-transparent">
-                <div className="w-12 h-12 bg-black mb-3 flex items-center justify-center rounded-full">
+              <div key={index} className="p-4 border border-text-color/10 bg-transparent">
+                <div className="w-12 h-12 bg-text-color mb-3 flex items-center justify-center rounded-full">
                   <Sparkles className="text-white" size={22} />
                 </div>
                 <h3 className="mb-2">{feature.title}</h3>
-                <p className="text-[#444444] text-sm">{feature.description}</p>
+                <p className="text-text-secondary-color text-sm">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -137,8 +137,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Stats Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid md:grid-cols-4 gap-6 text-center">
+      <section className="bg-surface-color py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-6 text-center">
           {[
             { value: 20, suffix: 'M+', label: 'Apps Downloaded Worldwide' },
             { value: 50, suffix: '+', label: 'Published Applications' },
@@ -146,41 +146,41 @@ export function HomePage({ onNavigate }: HomePageProps) {
             { value: 4.5, suffix: '', label: 'Average Rating', decimals: 1 }
           ].map((stat, index) => (
             <div key={index}>
-              <div className="text-4xl mb-1 font-bold">
+              <div className="text-4xl text-text-color mb-1 font-bold">
                 <NumberTicker
                   value={stat.value}
                   suffix={stat.suffix}
                   decimals={stat.decimals}
                 />
               </div>
-              <p className="text-[#444444] text-sm">{stat.label}</p>
+              <p className="text-text-secondary-color text-sm">{stat.label}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Featured Applications Section */}
-      <section className="bg-white py-20">
+      <section className="bg-background-color py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-[1fr_2fr] gap-12 items-center">
             {/* Left Column: Text and Navigation */}
             <div>
               <h2 className="mb-4 text-4xl font-bold tracking-tight">Featured Applications</h2>
-              <p className="text-[#444444] text-md mb-8 max-w-sm">
+              <p className="text-text-secondary-color text-md mb-8 max-w-sm">
                 A glimpse into our most popular and innovative mobile applications
               </p>
 
               <div className="flex gap-4">
                 <button
                   onClick={() => scrollApps('left')}
-                  className="cursor-pointer w-10 h-10 bg-[#D1D1D1] rounded-full shadow-lg bg-transparent border border-black/10 hover:bg-black hover:text-white transition-colors flex items-center justify-center text-black"
+                  className="cursor-pointer w-10 h-10 bg-white rounded-full shadow-lg bg-transparent border border-text-color/10 hover:bg-text-color hover:text-white transition-all duration-200 flex items-center justify-center text-text-color"
                   aria-label="Scroll left"
                 >
                   <ChevronLeft size={20} />
                 </button>
                 <button
                   onClick={() => scrollApps('right')}
-                  className="cursor-pointer w-10 h-10 bg-[#D1D1D1] rounded-full shadow-lg bg-transparent border border-black/10 hover:bg-black hover:text-white transition-colors flex items-center justify-center text-black"
+                  className="cursor-pointer w-10 h-10 bg-white rounded-full shadow-lg bg-transparent border border-text-color/10 hover:bg-text-color hover:text-white transition-all duration-200 flex items-center justify-center text-text-color"
                   aria-label="Scroll right"
                 >
                   <ChevronRight size={20} />
@@ -197,7 +197,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               {applications.map((app, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-[320px] bg-white border border-[#E5E5E5] p-4 flex flex-col items-start text-left snap-start"
+                  className="flex-shrink-0 w-[320px] bg-white border border-text-color/10 p-4 flex flex-col items-start text-left snap-start grayscale-100 hover:grayscale-0 opacity-80 hover:opacity-100 transition-all cursor-pointer"
                 >
                   <div className="w-24 h-24 mb-6 rounded-2xl overflow-hidden bg-gray-100">
                     <ImageWithFallback
@@ -208,19 +208,19 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   </div>
 
                   <h3 className="mb-3 text-xl font-bold">{app.name}</h3>
-                  <p className="text-[#666666] text-sm mb-6 leading-relaxed min-h-[40px]">
+                  <p className="text-text-secondary-color text-sm mb-6 leading-relaxed min-h-[40px]">
                     {app.description}
                   </p>
 
                   <div className="flex gap-2 w-full mt-auto">
-                    <button className="cursor-pointer flex flex-1 items-center border border-black bg-white hover:bg-[#F5F5F5] text-black/80 px-3 py-3 text-xs font-medium transition-colors text-left">
+                    <button className="cursor-pointer flex flex-1 items-center border border-text-color/10 hover:bg-text-color/10 text-text-color px-3 py-3 text-xs font-medium transition-all duration-200 text-left">
                       <img src="/1tabb_website/assets/images/appstore.svg" alt="App Store" className="w-6 h-6" />
                       <div className='ml-2'>
                         <p className='my-[-4px] text-[10px]'>Download on the</p>
                         <p className='my-[-4px] font-semibold text-[12px]'>App Store</p>
                       </div>
                     </button>
-                    <button className="cursor-pointer flex flex-1 items-center border border-black bg-white hover:bg-[#F5F5F5] text-black/80 px-3 py-3 text-xs font-medium transition-colors text-left">
+                    <button className="cursor-pointer flex flex-1 items-center border border-text-color/10 hover:bg-text-color/10 text-text-color px-3 py-3 text-xs font-medium transition-all duration-200 text-left">
                       <img src="/1tabb_website/assets/images/gp.svg" alt="Google Play" className="w-6 h-6" />
                       <div className='ml-2'>
                         <p className='my-[-4px] text-[10px]'>Get it on</p>
@@ -236,7 +236,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Clients Section */}
-      <section className="bg-white py-12">
+      <section className="bg-background-color py-12">
         <div className="mx-auto">
           <Marquee pauseOnHover className="[--duration:20s]">
             {[
@@ -303,21 +303,21 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="bg-surface-color py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-black mb-4">Ready to Join Our Journey?</h2>
-          <p className="text-[#444444] mb-6 max-w-2xl mx-auto">
+          <h2 className="text-text-color mb-4">Ready to Join Our Journey?</h2>
+          <p className="text-text-secondary-color mb-6 max-w-2xl mx-auto">
             Whether you're looking to work with us or partner with us, let's create the future of AI-powered mobile applications together.
           </p>
           <button
             onClick={() => onNavigate('Career')}
-            className="cursor-pointer bg-black text-white px-6 py-3 inline-flex items-center space-x-2 hover:bg-brand-orange  hover:text-black transition-colors text-sm mr-3"
+            className="cursor-pointer bg-text-color text-white px-6 py-3 inline-flex items-center space-x-2 hover:bg-brand-color hover:text-text-color hover:shadow-[inset_0_0_0_1px_var(--color-text-color)] transition-all duration-200 text-sm mr-3"
           >
             <span>Join Our Team</span>
           </button>
           <button
             onClick={() => onNavigate('Contact')}
-            className="cursor-pointer bg-transparent shadow-[inset_0_0_0_1px_#000000] hover:shadow-[inset_0_0_0_1px_transparent] px-6 py-3 inline-flex items-center space-x-2 hover:bg-brand-orange transition-colors text-sm"
+            className="cursor-pointer bg-transparent shadow-[inset_0_0_0_1px_var(--color-text-color)] px-6 py-3 inline-flex items-center space-x-2 hover:bg-brand-color transition-all duration-200 text-sm"
           >
             <span>Become a Partner</span>
           </button>
