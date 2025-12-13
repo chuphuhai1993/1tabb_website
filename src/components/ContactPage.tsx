@@ -1,6 +1,7 @@
 import { Send, Sparkles } from 'lucide-react';
 import { useState } from 'react';
 import { NumberTicker } from './NumberTicker';
+import { getAssetPath } from '../utils/assetPath';
 
 export function ContactPage() {
   const [formData, setFormData] = useState({
@@ -45,7 +46,7 @@ export function ContactPage() {
       {/* Hero Section */}
       <section className="bg-background-color py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-          <img className="w-48 mb-6 mix-blend-multiply" src='/1tabb_website/assets/shakehand_woodcut.png' alt="Contacts" />
+          <img className="w-48 mb-6 mix-blend-multiply" src={getAssetPath('assets/shakehand_woodcut.png')} alt="Contacts" />
           <h1 className="mb-4">Partner With Us</h1>
           <p className="text-text-secondary-color max-w-3xl mx-auto text-sm">
             Join forces with us to amplify your app&apos;s success. Leverage our expertise in user acquisition, monetization, and data analytics to maximize your app&apos;s potential.

@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/postcss';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: process.env.VITE_BASE_PATH || '/',
   css: {
     postcss: {
       plugins: [tailwindcss()],

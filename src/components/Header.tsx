@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { getAssetPath } from '../utils/assetPath';
 
 interface HeaderProps {
   currentPage: string;
@@ -20,7 +21,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             onClick={() => onNavigate('Home')}
             className="cursor-pointer flex items-center space-x-2 w-20"
           >
-            <img src="/1tabb_website/assets/logo/logo2_black.svg" alt="1Tabb" className="h-8 w-auto hover:text-red-500" />
+            <img src={getAssetPath('assets/logo/logo2_black.svg')} alt="1Tabb" className="h-8 w-auto hover:text-red-500" />
           </button>
 
           {/* Desktop Navigation */}

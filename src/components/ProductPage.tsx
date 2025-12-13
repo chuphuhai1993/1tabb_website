@@ -1,17 +1,18 @@
 import { ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { getAssetPath } from '../utils/assetPath';
 
 export function ProductPage() {
   const products = [
     {
       name: 'LED Scroller',
       description: 'Dynamic live wallpapers that bring your screen to life.',
-      icon: '/1tabb_website/assets/products/led.png'
+      icon: getAssetPath('assets/products/led.png')
     },
     {
       name: 'Neon Banner',
       description: 'Save online videos in HD to watch offline anytime.',
-      icon: '/1tabb_website/assets/products/neon.png'
+      icon: getAssetPath('assets/products/neon.png')
     },
     {
       name: 'Voice Changer',
@@ -50,7 +51,7 @@ export function ProductPage() {
       {/* Hero Section */}
       <section className="bg-background-color text-black py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-          <img className="w-40 mb-8 mix-blend-multiply" src='/1tabb_website/assets/appstore_woodcut.png' alt="Product" />
+          <img className="w-40 mb-8 mix-blend-multiply" src={getAssetPath('assets/appstore_woodcut.png')} alt="Product" />
           <h1 className="text-black mb-4">Our Products</h1>
           <p className="text-text-secondary-color max-w-2xl mx-auto">
             Discover our comprehensive suite of AI-powered mobile applications designed to transform how you work, learn, and play.
@@ -132,14 +133,14 @@ export function ProductPage() {
 
                   <div className="flex gap-2 w-full mt-auto">
                     <button className="cursor-pointer flex flex-1 items-center border border-text-color/10 hover:bg-text-color/10 text-text-color px-3 py-3 text-xs font-medium transition-all duration-200 text-left">
-                      <img src="/1tabb_website/assets/images/appstore.svg" alt="App Store" className="w-6 h-6" />
+                      <img src={getAssetPath('assets/images/appstore.svg')} alt="App Store" className="w-6 h-6" />
                       <div className='ml-2'>
                         <p className='my-[-4px] text-[10px]'>Download on the</p>
                         <p className='my-[-4px] font-semibold text-[12px]'>App Store</p>
                       </div>
                     </button>
                     <button className="cursor-pointer flex flex-1 items-center border border-text-color/10 hover:bg-text-color/10 text-text-color px-3 py-3 text-xs font-medium transition-all duration-200 text-left">
-                      <img src="/1tabb_website/assets/images/gp.svg" alt="Google Play" className="w-6 h-6" />
+                      <img src={getAssetPath('assets/images/gp.svg')} alt="Google Play" className="w-6 h-6" />
                       <div className='ml-2'>
                         <p className='my-[-4px] text-[10px]'>Get it on</p>
                         <p className='my-[-4px] font-semibold text-[12px]'>Google Play</p>
